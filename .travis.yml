@@ -2,8 +2,8 @@ services:
   - docker
 
 script: 
-  - docker-compose build buildkite_ci
-  - docker-compose run --rm buildkite_ci bash ci.sh
+  - docker-compose build ci
+  - docker-compose run --rm ci bash ci.sh
 
 # services:
 #   - postgresql
